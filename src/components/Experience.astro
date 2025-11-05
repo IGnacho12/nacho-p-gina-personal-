@@ -1,33 +1,34 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
+
 const SERVICES = [
   {
-    time: "de 8hrs a 2 días",
-    title: "Limpieza de Hardware y Software",
-    price: "$ 4.500",
+    time: "8 hours to 2 days",
+    title: "Hardware and Software Cleaning",
+    price: "$4,500",
     description:
-      "Mantenimiento preventivo y correctivo de equipos informáticos, incluyendo la limpieza física de componentes de hardware y la optimización de sistemas operativos. Eliminación de archivos basura, solución de problemas de rendimiento.",
+      "Preventive and corrective maintenance of computer equipment, including physical cleaning of hardware components and optimization of operating systems. Removal of junk files and resolution of performance issues.",
   },
   {
-    time: "de 15m a 50m",
-    title: "Activación de Windows y Office",
-    price: "$ 500",
+    time: "15 to 50 minutes",
+    title: "Windows and Office Activation",
+    price: "$500",
     description:
-      "Activación remota de sistemas operativos Windows y Microsoft Office, lo que permite una activación sin tener que mover el equipo de tu hogar. Además, proporciono una explicación detallada sobre porque la metodología que utilizo es la más segura y confiable.",
+      "Remote activation of Windows operating systems and Microsoft Office, allowing activation without moving the computer from your home. I also provide a detailed explanation of why the method I use is the safest and most reliable.",
   },
   {
-    time: "de 4hrs a 12hrs",
-    title: "Instalación de Sistema Operativo y Paquetes de Ofimática",
-    price: "$ 3.500",
+    time: "4 to 12 hours",
+    title: "Operating System and Office Suite Installation",
+    price: "$3,500",
     description:
-      "Instalación de sistemas operativos Windows, tanto versiones oficiales como optimizadas - Instalación de programas de ofimática, con activación permanente en ambos servicios.",
+      "Installation of Windows operating systems, both official and optimized versions. Includes installation of office software packages with permanent activation for both services.",
   },
   {
-    time: "de 1 a 3 días",
-    title: "Desbloqueo de Computadora Del Gobierno",
-    price: "$ 15.000",
+    time: "1 to 3 days",
+    title: "Government Computer Unlocking",
+    price: "$15,000",
     description:
-      "En colaboración con mi compañero Ramiro Rojas, realizamos el desbloqueo de computadoras otorgadas por el gobierno, incluyendo equipos de la línea Conectar Igualdad y modelos más antiguos. Este servicio garantiza una solución permanente, asegurando que los dispositivos puedan ser utilizados sin restricciones.",
+      "In collaboration with my colleague Ramiro Rojas, we unlock government-issued computers, including devices from the Conectar Igualdad program and older models. This service provides a permanent solution, ensuring that devices can be used without restrictions.",
   },
 ];
 ---
@@ -35,7 +36,7 @@ const SERVICES = [
 <ol class="relative mt-16">
   {
     SERVICES.map((experience) => (
-      <li class="">
+      <li>
         <ExperienceItem {...experience} />
       </li>
     ))
